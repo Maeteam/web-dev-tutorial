@@ -158,9 +158,9 @@ this allows you to create basically everything, your own pages, retractable arti
 which i designed their webpage.<br>
 Now lets get to work on functions!<br>
 ```javascript
-<button class="accordion" onclick="togglePanel('panel1')">Website seizure - www.buystuff.net</button>
+<button class="accordion" onclick="togglePanel('panel1')">Coolest thing ever</button>
     <div id="panel1" class="panel">
-        <p>GBI agents coordinated to save a foreign website that was hacked by malicious actors, now in lockdown until owner claims it. if you are the owner of www.buystuff.net please contact us!</p>
+        <p>This is toggleable and you can change to your liking, enjoy!</p>
     </div>
 <script>
 function togglePanel(panelId) {
