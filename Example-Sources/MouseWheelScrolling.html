@@ -64,7 +64,7 @@
 
     <script>
     var scrollDiv = document.getElementById("scrollArea");
-    var scrollSpeedFactor = 0.1;
+    var scrollSpeedFactor = 0.05;
 
     function handleScroll(event) {
         event.preventDefault();
@@ -74,15 +74,13 @@
 
         var newScrollTop = scrollDiv.scrollTop + scrollAmount;
 
-        var maxScrollTop = scrollDiv.scrollHeight - scrollDiv.clientHeight;
-        //boundries below
+        var maxScrollTop = 440;
         if (newScrollTop < 0) newScrollTop = 0;
         if (maxScrollTop > 0 && newScrollTop > maxScrollTop) newScrollTop = maxScrollTop;
         scrollDiv.scrollTop = newScrollTop;
-        // ^ the boundries so you wont go too far up or down
     }
 
-    scrollDiv.addEventListener("wheel", handleScroll);//listen for mouse wheel
+    scrollDiv.addEventListener("wheel", handleScroll);
     </script>
 </body>
 </html>
