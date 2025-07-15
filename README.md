@@ -67,7 +67,7 @@ BUT, unlike html & javascript, css is probably the most similar to real life css
 ### so, what is cascade style sheets?
 <b>in a nutshell, css makes everything beautiful</b><br>
 remember those classes?, paragraphs & headlines?, then cascade is basically what `Defines`<br>
-those classes, it's syntax is like so:
+those classes & types and how they look, it's syntax is like so:
 ```css
 h1 {
   color: #ffffff;
