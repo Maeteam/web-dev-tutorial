@@ -117,7 +117,7 @@ Remember, IDs are set after the type like so:
 | ISPConfig      | Internet service provider page |
 | CreateCurrency      | coin creation page |
 | FindDeviceManual      | Device manual finding page |
-
+JobsPolice Report
 Note: IDs can only belong to one object, it will be cleaner that way.
 
 
