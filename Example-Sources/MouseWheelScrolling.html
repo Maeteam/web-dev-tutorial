@@ -67,13 +67,9 @@
     var scrollSpeedFactor = 0.05;
 
     function handleScroll(event) {
-        event.preventDefault();
-
         var delta = event.deltaY || -event.wheelDelta || 0;
         var scrollAmount = delta * scrollSpeedFactor;
-
         var newScrollTop = scrollDiv.scrollTop + scrollAmount;
-
         var maxScrollTop = 440;
         if (newScrollTop < 0) newScrollTop = 0;
         if (maxScrollTop > 0 && newScrollTop > maxScrollTop) newScrollTop = maxScrollTop;
