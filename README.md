@@ -72,6 +72,7 @@ those classes, it's syntax is like so:
   color: #ffffff;
 }
 ```
+`NOTE: WHEN USING 'CSS' IN THE SAME FILE AS HTML, YOU'LL NEED TO USE A DOT BEFORE CREATING THE CLASS`
 ## Simple Syntax
 ## Creating shops
 hey
