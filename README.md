@@ -56,9 +56,7 @@ just do <br> without </br> and it will go down a line without causing problems!
 ```
 
 ## Examples
-```
-[Example code](../Example-Sources/)
-```
+[Default Templates](Example-Sources)
 
 ## Cascade style sheets
 Alright, so cascade style sheets.<br>
