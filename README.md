@@ -123,6 +123,7 @@ Remember, IDs are set after the type like so:
 | HackShopExploits      | Hackshop exploits page |
 | Jobs      | Hackshop jobs page |
 | CTF      | Hackshop CTF page |
+
 Note: IDs should only belong to one object, it will be cleaner that way.
 
 
