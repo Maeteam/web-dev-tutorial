@@ -128,10 +128,17 @@ Remember, IDs are set after the type like so:
 | HackShopExploits      | Hackshop exploits page |
 | Jobs      | Hackshop jobs page |
 | CTF      | Hackshop CTF page |
-## load images
-lets start off, by saying images are loadable by default in grey hack, but only a few. you can see how to load images in [Default Templates](Example-Sources/Default-templates)
 
 Note: IDs should only belong to one object, it will be cleaner that way.
+## load images
+lets start off, by saying images are loadable by default in grey hack, but only a few. you can see how to load images in [Default Templates](Example-Sources/Default-templates)
+there is a custom way to upload your own images and that i wont cover because i am not that good at it and its messy<br>
+but simple image loading
+```html
+<img src="bank.png" width="120" height="120" align="center">
+```
+yep, thats it, only src can equal whatever you want, go hunt the web for available pictures, and you can also see them in [Default Templates](Example-Sources/Default-templates)<br>
+where almost every page has its own image
 ## Javascript
 okay, so javascript is VERY similar to css, in terms of how it works within the confines of grey hack.<br>
 lets start by saying that still, the javascript & html & css are in *the same file*,<br>
