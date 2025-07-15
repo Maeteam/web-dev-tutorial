@@ -55,10 +55,9 @@ Fun fact: <br> doesnt need closing, its basically like using \n in coding
 just do <br> without </br> and it will go down a line without causing problems!
 ```
 
-## examples
+## Examples
 ```
-look at the "Example Sources" Directory.
-I listed a couple of html files.
+[Default Templates](Example-Sources/Default-templates)
 ```
 
 ## Cascade style sheets
