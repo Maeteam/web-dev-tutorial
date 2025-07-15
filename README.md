@@ -16,7 +16,6 @@ a tutorial for web development in a single html file, including javascript and c
 - [Creating shops](#Creating-shops)
 - [Contributing](#contributing)
 - [License](#license)
-<br>
 ## HTML basics
 HTML works in a simple way,<br>
 you have built-in "classes", some example ones are:
