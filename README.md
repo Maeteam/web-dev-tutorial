@@ -65,6 +65,7 @@ since it is inside of html but people usually choose to add an additional file c
 Now, its important to know some of css' features in real html don't apply to grey hack.<br>
 BUT, unlike html & javascript, css is probably the most similar to real life css, which is great news.<br>
 ### so, what is cascade style sheets?
+<b>in a nutshell, css makes everything beautiful</b><br>
 remember those classes?, paragraphs & headlines?, then cascade is basically what `Defines`<br>
 those classes, it's syntax is like so:
 ```css
