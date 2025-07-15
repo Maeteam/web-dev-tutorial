@@ -57,7 +57,7 @@ just do <br> without </br> and it will go down a line without causing problems!
 
 ## Examples
 ```
-[Default Templates](Example-Sources/Default-templates)
+[Default Templates](Example-Sources)
 ```
 
 ## Cascade style sheets
