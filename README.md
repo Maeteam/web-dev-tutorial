@@ -103,7 +103,8 @@ not very good looking, but a shop, so you may ask, where are the files, since yo
 
 ### Adding Files to your shop
 quick tutorial time!
-1. now find the `/Public/htdocs/downloads/` folder, there you  put the files, a txt a binary, anything you want.
+1. now find the `/Public/htdocs/downloads/` folder.
+2. put the downloadable files there, text binary logs, everything.
 3. Find the `/server/httpd.conf` file, now a sample description is there, with the classic JSON format, pretty intuitive.
 3. set the name, price and description to your likings accordingly to the httpd.conf.
 4. BOOM you have a full shop with an HTML page.
