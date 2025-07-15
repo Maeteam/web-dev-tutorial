@@ -15,7 +15,7 @@ a tutorial for web development in a single html file, including javascript and c
 - [Contributing](#contributing)
 - [License](#license)
 
-
+<br><br><br><br><br><br>
 
 
 ## Setting shop
