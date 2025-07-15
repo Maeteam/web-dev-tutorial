@@ -91,7 +91,7 @@ all of these are easily summonable using their ID
 ```html
 <h>My Shop</h>
 <p>Buy anything you want, feel free to look into our stock!</p>
-<button type="button" class="btn btn-primary" id="InformaticaShop">Shop</button>
+<button class="btn btn-primary" id="InformaticaShop">Shop</button>
 ```
 Note: keep in mind the uppercase letters<br>
 So, InformaticaShop is calling for the normal shop, a cool thing is, you can actuall run this 3 liner and have a shop up and running<br>
