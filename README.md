@@ -83,7 +83,9 @@ so if you would want a header that is customclass you would do like so:
 <h1 class="customclass">Cool White header</h1>
 ```
 now, this doesnt do anything because both do the same but you could make your life easier with cascade style sheets!<br>
-dont worry if you didnt understand it i will continue to talk about it, this is just an introduction
+dont worry if you didnt understand it i will continue to talk about it, this is just an introduction<br>
+Note that at the end of a setting in css you should put a ";" to end the line, similar to csharp.
+<br>`Most css settings are pretty straightforward, but i suggest using google to learn more advanced methods`
 ## Creating shops
 Grey hack has built in IDs for shops, and more websites.<br>
 you might be familiar with the hackshop or shop or the bank website<br>
