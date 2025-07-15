@@ -112,10 +112,10 @@ Remember, IDs are set after the type like so:
 | ID       | Description     |
 |------------|----------------|
 | InformaticaShop     | The classic green shop       |
-| `<b>`        | Bold       |
-| `<br>`    | Newline |
-| `<h>`      | Header |
-| `<i>`      | Italic |
+| RegisterBank        | Register Page to a bank       |
+| LoginBank    | Bank login page |
+| ISPConfig      | Internet service provider page |
+| CreateCurrency      | coin creation page |
 | `<button>`      | Button class |
 
 Note: IDs can only belong to one object, it will be cleaner that way.
