@@ -44,7 +44,11 @@ and `</p>`, notice the slash P, indicating to end the paragraph.
 | `<b>`        | Bold       |
 | `<br>`    | Newline |
 | `<h>`      | Header |
-
+| `<i>`      | Italic |
+```
+Fun fact: <br> doesnt need closing, its basically like using \n in coding
+just do <br> without </br> and it will go down a line without causing problems!
+```
 ## Simple Syntax
 ## Creating shops
 hey
