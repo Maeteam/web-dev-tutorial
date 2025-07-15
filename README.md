@@ -10,6 +10,7 @@ a tutorial for web development in a single html file, including javascript and c
 ## Table of Contents
 - [The basics](#html-basics)
 - [Cheat Sheet](#Cheat-Sheet)
+- [Examples](#examples)
 - [Installation](#Simple-Syntax)
 - [Installation](#installation)
 - [Creating shops](#Creating-shops)
@@ -47,6 +48,11 @@ and `</p>`, notice the slash P, indicating to end the paragraph.
 ```
 Fun fact: <br> doesnt need closing, its basically like using \n in coding
 just do <br> without </br> and it will go down a line without causing problems!
+```
+## examples
+```
+look at the "Example Sources" Directory.
+I listed a couple of html files.
 ```
 ## Simple Syntax
 ## Creating shops
