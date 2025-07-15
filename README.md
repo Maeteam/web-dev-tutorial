@@ -116,7 +116,7 @@ Remember, IDs are set after the type like so:
 | LoginBank    | Bank login page |
 | ISPConfig      | Internet service provider page |
 | CreateCurrency      | coin creation page |
-| `<button>`      | Button class |
+| FindDeviceManual      | Device manual finding page |
 
 Note: IDs can only belong to one object, it will be cleaner that way.
 
