@@ -22,6 +22,7 @@ you have built-in "classes", some example ones are:
 - Paragraph
 - Headline
 - Bold
+
 <br>Those are pretty straightforward,<br>
 To set up a starting point, every "object" is surrounded by angle brackets,<br>
 or `<>`, so for example:
