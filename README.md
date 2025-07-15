@@ -282,7 +282,7 @@ you should probably use overflow: hidden; on body like so:
 ```css
 html, body {
   overflow: hidden;
-        }
+}
 ```
 that way the normal scroll bar wont appear and cause problems.
 <br>Thats about it for mouse wheel scrolling! enjoy this feature!<br>
