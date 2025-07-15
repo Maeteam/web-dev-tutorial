@@ -45,6 +45,9 @@ and `</p>`, notice the slash P, indicating to end the paragraph.
 | `<br>`    | Newline |
 | `<h>`      | Header |
 | `<i>`      | Italic |
+<br>
+Notice: a lot of real life html classes don't work inside grey hack.<br>
+but search actual html on google and try things out, thats how you find out new things!.
 ```
 Fun fact: <br> doesnt need closing, its basically like using \n in coding
 just do <br> without </br> and it will go down a line without causing problems!
