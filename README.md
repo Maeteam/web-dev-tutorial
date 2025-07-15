@@ -49,7 +49,7 @@ and `</p>`, notice the slash P, indicating to end the paragraph.
 | `<div>`      | generic container |
 <br>
 Notice: a lot of real life html types don't work inside grey hack.<br>
-but search actual html on google and try things out, thats how you find out new things!.
+but search actual html on google and try things out, thats how you find out new things!.<br>
 ```
 Fun fact: <br> doesnt need closing, its basically like using \n in coding
 just do <br> without </br> and it will go down a line without causing problems!
