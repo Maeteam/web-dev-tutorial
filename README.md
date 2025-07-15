@@ -45,6 +45,7 @@ and `</p>`, notice the slash P, indicating to end the paragraph.
 | `<h>`      | Header |
 | `<i>`      | Italic |
 | `<button>`      | Button class |
+| `<div>`      | generic container |
 <br>
 Notice: a lot of real life html classes don't work inside grey hack.<br>
 but search actual html on google and try things out, thats how you find out new things!.
@@ -204,7 +205,46 @@ now play with this by youself, check out the source files i put in `Example Sour
 ### And now, for the thing youve been waiting for..<br>
 ### Javascript mouse wheel scrolling!!
 lets get started!<br>
-first of all, i left a template project with scrolling [src](Example-Sources/MouseWheelScrolling.html))
-
-
+first of all, i left a template project with scrolling here -> [Source code](Example-Sources/MouseWheelScrolling.html)
+check out [Examples](Example-Sources) to see all templates i left in the project!.<br>
+now for coding!<br>
+alright so lets start by logic, we want the javascript to *listen* to mouse wheel scrolling and then act accordingly,<br>
+so lets start, by writing our `<script>`<br>
+and setting our scroll speed, basically how fast we travel using the mouse wheel,<br>
+an ideal speed would be 0.1, but since its grey hack we need people to appreciate the scroll wheel, and the page is tiny so we need it to not jump.<br>
+the best outcome ive seen is `0.05`, do you remember how to set variable?
+```javascript
+<script>
+var scrollSpeedFactor = 0.05;
+</script>
+```
+thats right!, we use var, lets pace things up.<br>
+so we want to get *where* to scroll, simple<br>
+`var scrollDiv = document.getElementById("scrollArea");`
+this line sets a variable, this is exactly the reason why you should only use ID for 1 object,
+get **element**, and scrollArea is where you put all the content like so:<br>
+```html
+<div id="scrollArea"> // set where to scroll
+  <div class="content">
+    <h>Title</h>
+    <p>Line 1</p>
+    <p>Line 2</p><br>
+  </div>
+</div>
+```
+so, we have scrollArea set up as the ID for the container<br>
+scrollDiv will be set to this element. now lets listen for scrolling,
+we call for scrollDiv the variable that we just set, and we add listener.<br>
+```javascript
+scrollDiv.addEventListener("wheel", handleScroll);
+```
+HOLD UP! not so fast, lets go one by one, so scrollDiv.addEventListener, is pretty straightforward, now "wheel", is simply the mouse wheel<br>
+but what is handleScroll? answer: nothing.<br>
+its a function which we have yet to create, so lets do!<br>
+```javascript
+function handleScroll(event) {
+  // nothing yet
+}
+scrollDiv.addEventListener("wheel", handleScroll);
+```
 
