@@ -43,6 +43,7 @@ and `</p>`, notice the slash P, indicating to end the paragraph.
 | `<br>`    | Newline |
 | `<h>`      | Header |
 | `<i>`      | Italic |
+| `<button>`      | Button class |
 <br>
 Notice: a lot of real life html classes don't work inside grey hack.<br>
 but search actual html on google and try things out, thats how you find out new things!.
