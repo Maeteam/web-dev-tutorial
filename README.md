@@ -170,6 +170,7 @@ straight taken out of the gbi website, but wait, why does this look so funky in 
 easy answer: cascade style sheets, we didnt include the css in this code snippet, which causes all of the objects to look like the default look<br>
 if you would have added a simple snippet like this above:
 ```css
+<style>
 .accordion {
       background-color: #1a2f4f;
       color: #e3e3e3;
@@ -192,13 +193,18 @@ if you would have added a simple snippet like this above:
   border-right: 3px solid #2b4d77;
   border-bottom: 3px solid #2b4d77;
     }
+</style>
 ```
+look familiar? cause it is!! its literally the GBI code!
 Notice that .accordion has a dot behind it! its a class!!<br>
-and in the code we have `<button class="accordion"...`, we set the class to accordion! and we put a dot behind it!
+and in the code we have `<button class="accordion"...`, we set the class to accordion! and we put a dot behind it!<br>
+### AWESOME!
+now play with this by youself, check out the source files i put in `Example Sources`
 ## Mouse Wheel Scrolling
 ### And now, for the thing youve been waiting for..<br>
-### JAVASCRIPT MOUSE SCROLLING!!
+### Javascript mouse wheel scrolling!!
 lets get started!<br>
+first of all, i left a template project with scrolling [src]([#Example-Sources/](https://github.com/Maeteam/web-dev-tutorial/blob/main/Example-Sources/MouseWheelScrolling.html))
 
 
 
