@@ -117,8 +117,13 @@ Remember, IDs are set after the type like so:
 | ISPConfig      | Internet service provider page |
 | CreateCurrency      | coin creation page |
 | FindDeviceManual      | Device manual finding page |
-JobsPolice Report
-Note: IDs can only belong to one object, it will be cleaner that way.
+| JobsPolice      | Police jobs page |
+| Report      | Police report suspect page |
+| HackShopTools      | Hackshop downloads page |
+| HackShopExploits      | Hackshop exploits page |
+| Jobs      | Hackshop jobs page |
+| CTF      | Hackshop CTF page |
+Note: IDs should only belong to one object, it will be cleaner that way.
 
 
 
