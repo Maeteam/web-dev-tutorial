@@ -11,8 +11,7 @@ a tutorial for web development in a single html file, including javascript and c
 - [The basics](#html-basics)
 - [Cheat Sheet](#Cheat-Sheet)
 - [Examples](#examples)
-- [Installation](#Simple-Syntax)
-- [Installation](#installation)
+- [Cascade Style Sheets](#Cascade-style-sheets)
 - [Creating shops](#Creating-shops)
 - [Contributing](#contributing)
 - [License](#license)
@@ -58,6 +57,20 @@ look at the "Example Sources" Directory.
 I listed a couple of html files.
 ```
 
+## Cascade style sheets
+Alright, so cascade style sheets.<br>
+lets start simple, cascade styling sheets, or `css`, is "kinda" a programming language<br>
+since it is inside of html but people usually choose to add an additional file called `style.css`.<br>
+Now, its important to know some of css' features in real html don't apply to grey hack.<br>
+BUT, unlike html & javascript, css is probably the most similar to real life css, which is great news.<br>
+### so, what is cascade style sheets?
+remember those classes?, paragraphs & headlines?, then cascade is basically what `Defines`<br>
+those classes, it's syntax is like so:
+```css
+.customclass {
+  color: #ffffff;
+}
+```
 ## Simple Syntax
 ## Creating shops
 hey
