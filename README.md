@@ -30,9 +30,11 @@ or `<>`, so for example:
 `Note: this isnt actual syntax, its just an example.`<br>
 how you would actually proceed would be like so:<br>
 ```html
-<p
+<p>Hello world!</p>
 ```
-<b><b>Note: `<p>` is for paragraph</b>
+<b><b>Note: `<p>` is for paragraph</b><br>
+Now, you could see you start by doing `<p>`, to indicate you want a paragraph.<br>
+and `</p>`, notice the slash P, indicating to end the paragraph.
 ## Simple Syntax
 ## Creating shops
 hey
