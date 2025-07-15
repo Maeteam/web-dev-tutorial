@@ -56,8 +56,8 @@ just do <br> without </br> and it will go down a line without causing problems!
 ```
 
 ## Examples
-[Default Templates](Example-Sources)
-
+[Example Scripts](Example-Sources)
+[Default Templates](Example-Sources/Default-templates)
 ## Cascade style sheets
 Alright, so cascade style sheets.<br>
 lets start simple, cascade styling sheets, or `css`, is "kinda" a programming language<br>
