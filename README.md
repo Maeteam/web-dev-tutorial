@@ -14,6 +14,7 @@ a tutorial for web development in a single html file, including javascript and c
 - [Cascade Style Sheets](#Cascade-style-sheets)
 - [Creating shops](#Creating-shops)
 - [ID cheatsheet](#id-cheatsheet)
+- [Load images](#load-images)
 - [Javascript](#javascript)
 - [Mouse whell scrolling](#Mouse-wheel-scrolling)
 ## HTML basics
@@ -127,6 +128,8 @@ Remember, IDs are set after the type like so:
 | HackShopExploits      | Hackshop exploits page |
 | Jobs      | Hackshop jobs page |
 | CTF      | Hackshop CTF page |
+## load images
+lets start off, by saying images are loadable by default in grey hack, but only a few. you can see how to load images in [Default Templates](Example-Sources/Default-templates)
 
 Note: IDs should only belong to one object, it will be cleaner that way.
 ## Javascript
@@ -247,4 +250,33 @@ function handleScroll(event) {
 }
 scrollDiv.addEventListener("wheel", handleScroll);
 ```
+alright, looking promising, lets continue,<br>
+time for some math - if you dont understand, thats 100% alright, its complicated.<br>
+however, i will explain.
+```javascript javascript
+<script>
+var scrollDiv = document.getElementById("scrollArea");
+var scrollSpeedFactor = 0.05;
+function handleScroll(event) {
+  var delta = event.deltaY; // built in function
+  var scrollAmount = delta * scrollSpeedFactor; // we set scrollspeedfactor before.
+  var newScrollTop = scrollDiv.scrollTop + scrollAmount; // current scroll position
+  var maxScrollTop = 440; // how down you can scroll, adjustable
+  if (newScrollTop < 0) newScrollTop = 0; // restrict from going too much up
+  if (maxScrollTop > 0 && newScrollTop > maxScrollTop) newScrollTop = maxScrollTop; // restrict from going too much down
+  scrollDiv.scrollTop = newScrollTop; // scroll position
+}
+scrollDiv.addEventListener("wheel", handleScroll); // lastly, listen and call handleScroll
+</script>
+```
+a-w-e-s-o-m-e.<br>
+so a few things, first of all, maxScrollTop is adjustable, this means youll need to adjust it to the needs of your page, second<br>
+you should probably use overflow: hidden; on body like so:
+```css
+html, body {
+  overflow: hidden;
+        }
+```
+that way the normal scroll bar wont appear and cause problems.
+<br>Thats about it for mouse wheel scrolling! enjoy this feature!<br>
 
