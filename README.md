@@ -259,7 +259,7 @@ scrollDiv.addEventListener("wheel", handleScroll);
 ```
 alright, looking promising, lets continue,<br>
 time for some math - if you dont understand, thats 100% alright, its complicated.<br>
-however, i will explain.
+however, i will add comments.
 ```javascript javascript
 <script>
 var scrollDiv = document.getElementById("scrollArea");
