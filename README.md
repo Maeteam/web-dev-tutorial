@@ -51,11 +51,13 @@ but search actual html on google and try things out, thats how you find out new 
 Fun fact: <br> doesnt need closing, its basically like using \n in coding
 just do <br> without </br> and it will go down a line without causing problems!
 ```
+
 ## examples
 ```
 look at the "Example Sources" Directory.
 I listed a couple of html files.
 ```
+
 ## Simple Syntax
 ## Creating shops
 hey
