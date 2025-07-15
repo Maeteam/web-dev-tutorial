@@ -9,7 +9,7 @@ a tutorial for web development in a single html file, including javascript and c
 <br>[Grey hack on steam](https://store.steampowered.com/app/605230/Grey_Hack/)
 ## Table of Contents
 
-- [Creating shops](##Setting-shop)
+- [Creating shops](#Setting-shop)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
