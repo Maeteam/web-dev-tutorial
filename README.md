@@ -26,8 +26,8 @@ you have built-in "classes", some example ones are:
 <br>Those are pretty straightforward,<br>
 To set up a starting point, every "object" is surrounded by angle brackets,<br>
 or `<>`, so for example:
-`<Start-paragraph>Hello!<end-paragraph><br>`
-`Note: this isnt actual syntax, its just an example.`<br>
+`<Start-paragraph>Hello!<end-paragraph>`<br>
+Note: this isnt actual syntax, its just an example.<br>
 how you would actually proceed would be like so:<br>
 ```html
 <p>Hello world!</p>
