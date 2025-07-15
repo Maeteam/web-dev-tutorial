@@ -84,6 +84,17 @@ so if you would want a header that is customclass you would do like so:
 ```
 now, this doesnt do anything because both do the same but you could make your life easier with cascade style sheets!<br>
 dont worry if you didnt understand it i will continue to talk about it, this is just an introduction
-## Simple Syntax
 ## Creating shops
-hey
+Grey hack has built in IDs for shops, and more websites.<br>
+you might be familiar with the hackshop or shop or the bank website<br>
+all of these are easily summonable using their ID
+```html
+<h>My Shop</h>
+<p>Buy anything you want, feel free to look into our stock!</p>
+<button type="button" class="btn btn-primary" id="InformaticaShop">Shop</button>
+```
+Note: keep in mind the uppercase letters<br>
+So, InformaticaShop is calling for the normal shop, a cool thing is, you can actuall run this 3 liner and have a shop up and running<br>
+not very good looking, but a shop, so you may ask, where are the files, since you dont see the files in the shop.
+
+
