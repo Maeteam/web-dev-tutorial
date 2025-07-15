@@ -68,11 +68,22 @@ BUT, unlike html & javascript, css is probably the most similar to real life css
 remember those classes?, paragraphs & headlines?, then cascade is basically what `Defines`<br>
 those classes, it's syntax is like so:
 ```css
+h1 {
+  color: #ffffff;
+}
 .customclass {
   color: #ffffff;
 }
 ```
-`NOTE: WHEN USING 'CSS' IN THE SAME FILE AS HTML, YOULL NEED TO SURROUND IT WITH A <style></stlye>`
+`NOTE: WHEN USING 'CSS' IN THE SAME FILE AS HTML, YOULL NEED TO SURROUND IT WITH A <style></stlye>`<br>
+Now, you might ask, why does customclass have a dot behind it?<br>
+great question, customclass is an ACTUAL class, while h1 is more of a "Type"<br>
+so if you would want a header that is customclass you would do like so:
+```html
+<h1 class="customclass">Cool White header</h1>
+```
+now, this doesnt do anything because both do the same but you could make your life easier with cascade style sheets!<br>
+dont worry if you didnt understand it i will continue to talk about it, this is just an introduction
 ## Simple Syntax
 ## Creating shops
 hey
