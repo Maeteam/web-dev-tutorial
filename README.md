@@ -9,6 +9,7 @@ a tutorial for web development in a single html file, including javascript and c
 <br>[Grey hack on steam](https://store.steampowered.com/app/605230/Grey_Hack/)
 ## Table of Contents
 - [The basics](#html-basics)
+- [Cheat Sheet](#Cheat-Sheet)
 - [Installation](#Simple-Syntax)
 - [Installation](#installation)
 - [Creating shops](#Creating-shops)
@@ -35,6 +36,12 @@ how you would actually proceed would be like so:<br>
 <b><b>Note: `<p>` is for paragraph</b><br>
 Now, you could see you start by doing `<p>`, to indicate you want a paragraph.<br>
 and `</p>`, notice the slash P, indicating to end the paragraph.
+
+## Cheat Sheet
+|Class|
+---------------
+|`<p>`|
+|`<b>`|
 ## Simple Syntax
 ## Creating shops
 hey
