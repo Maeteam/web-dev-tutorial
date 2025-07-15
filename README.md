@@ -14,7 +14,8 @@ a tutorial for web development in a single html file, including javascript and c
 - [Cascade Style Sheets](#Cascade-style-sheets)
 - [Creating shops](#Creating-shops)
 - [ID cheatsheet](#id-cheatsheet)
-- [License](#license)
+- [Javascript](#javascript)
+- [Mouse whell scrolling](#Mouse-wheel-scrolling)
 ## HTML basics
 HTML works in a simple way,<br>
 you have built-in "classes", some example ones are:
@@ -127,6 +128,77 @@ Remember, IDs are set after the type like so:
 | CTF      | Hackshop CTF page |
 
 Note: IDs should only belong to one object, it will be cleaner that way.
+## Javascript
+okay, so javascript is VERY similar to css, in terms of how it works within the confines of grey hack.<br>
+lets start by saying that still, the javascript & html & css are in *the same file*,<br>
+javascript, needs a ";" aswell on most of the line ends.<br>
+also needs to be surrounded by a `<script></script>`.<br>
+simple variable managment include:
+```javascript
+var _str = "Javascript";
+var _num = 99;
+```
+var & `const` and `let` **can** both be used for string & integers.<br>
+i 99% use var since i dont use variable that much but when i do, i use `var`<br>
+the differences are minor between the three, but i encourage you to play with them and see what fits you best.<br>
+### Functions:
+functions are one of the best things in grey hack's web development.<br>
+all because of: onclick()<br>
+this allows you to create basically everything, your own pages, retractable articles, one of the classiest examples of all the principles learned here are:<br>
+### www.gbi.com - in game website!
+which i designed their webpage.<br>
+Now lets get to work on functions!<br>
+```javascript
+<button class="accordion" onclick="togglePanel('panel1')">Website seizure - www.buystuff.net</button>
+    <div id="panel1" class="panel">
+        <p>GBI agents coordinated to save a foreign website that was hacked by malicious actors, now in lockdown until owner claims it. if you are the owner of www.buystuff.net please contact us!</p>
+    </div>
+<script>
+function togglePanel(panelId) {
+    var panel = document.getElementById(panelId);
+    if(panel.style.display == "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  }
+</script>
+```
+### YIPEE!!!
+WE HAVE A WORKING TOGGLEABLE PARAGRAPH!<br>
+straight taken out of the gbi website, but wait, why does this look so funky in grey hack?<br>
+easy answer: cascade style sheets, we didnt include the css in this code snippet, which causes all of the objects to look like the default look<br>
+if you would have added a simple snippet like this above:
+```css
+.accordion {
+      background-color: #1a2f4f;
+      color: #e3e3e3;
+      cursor: pointer;
+      padding: 12px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      font-size: 15px;
+      margin-top: 10px;
+    } 
+.accordion:hover{
+  background-color: #2b4d77;
+}
+.panel {
+  background-color: #102033;
+  display: none;
+  padding: 10px;
+  border-left: 3px solid #2b4d77;
+  border-right: 3px solid #2b4d77;
+  border-bottom: 3px solid #2b4d77;
+    }
+```
+Notice that .accordion has a dot behind it! its a class!!<br>
+and in the code we have `<button class="accordion"...`, we set the class to accordion! and we put a dot behind it!
+## Mouse Wheel Scrolling
+### And now, for the thing youve been waiting for..<br>
+### JAVASCRIPT MOUSE SCROLLING!!
+lets get started!<br>
 
 
 
