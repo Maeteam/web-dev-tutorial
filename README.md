@@ -31,7 +31,7 @@ how you would actually proceed would be like so:<br>
 ```html
 <p
 ```
-<b><b>Note: <p> is paragraph</b>
+<b><b>Note: `<p>` is for paragraph</b>
 ## Simple Syntax
 ## Creating shops
 hey
