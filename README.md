@@ -98,13 +98,13 @@ all of these are easily summonable using their ID
 <button class="btn btn-primary" id="InformaticaShop">Shop</button>
 ```
 Note: keep in mind the uppercase letters<br>
-So, InformaticaShop is calling for the normal shop, a cool thing is, you can actuall run this 3 liner and have a shop up and running<br>
+So, InformaticaShop is calling for the normal shop,<br><b>cool thing is, you can actually run this 3 liner and have a shop up and running</b><br>
 not very good looking, but a shop, so you may ask, where are the files, since you dont see the files in the shop.<br>
 
 ### Adding Files to your shop
 quick tutorial time!
 1. now find the `/Public/htdocs/downloads/` folder.
-2. put the downloadable files there, text binary logs, everything.
+2. put the downloadable files there - text files, binaries, logs, everything.
 3. Find the `/server/httpd.conf` file, now a sample description is there, with the classic JSON format, pretty intuitive.
 3. set the name, price and description to your likings accordingly to the httpd.conf.
 4. BOOM you have a full shop with an HTML page.
