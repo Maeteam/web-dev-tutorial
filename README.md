@@ -13,7 +13,7 @@ a tutorial for web development in a single html file, including javascript and c
 - [Examples](#examples)
 - [Cascade Style Sheets](#Cascade-style-sheets)
 - [Creating shops](#Creating-shops)
-- [Contributing](#contributing)
+- [ID cheatsheet](#id-cheatsheet)
 - [License](#license)
 ## HTML basics
 HTML works in a simple way,<br>
@@ -36,7 +36,7 @@ Now, you could see you start by doing `<p>`, to indicate you want a paragraph.<b
 and `</p>`, notice the slash P, indicating to end the paragraph.
 
 ## Cheat Sheet
-| Class       | Description     |
+| Type       | Description     |
 |------------|----------------|
 | `<p>`     | Paragraph       |
 | `<b>`        | Bold       |
@@ -95,6 +95,30 @@ all of these are easily summonable using their ID
 ```
 Note: keep in mind the uppercase letters<br>
 So, InformaticaShop is calling for the normal shop, a cool thing is, you can actuall run this 3 liner and have a shop up and running<br>
-not very good looking, but a shop, so you may ask, where are the files, since you dont see the files in the shop.
+not very good looking, but a shop, so you may ask, where are the files, since you dont see the files in the shop.<br>
+
+### Adding Files to your shop
+quick tutorial time!
+1. Find the `/server/httpd.conf` file, now a sample description is there, with the classic JSON format, pretty intuitive.
+2. now find the `/Public/htdocs/downloads/` folder, there you  put the files, a txt a binary, anything you want.
+3. set the name, price and description to your likings.
+4. BOOM you have a full shop with an HTML page.
+
+easy peasy<br>
+now all we have to do is decorate the website and we are good to go!
+## ID Cheatsheet
+Remember, IDs are set after the type like so:
+`<type class="classname" id="ID">`
+| ID       | Description     |
+|------------|----------------|
+| InformaticaShop     | The classic green shop       |
+| `<b>`        | Bold       |
+| `<br>`    | Newline |
+| `<h>`      | Header |
+| `<i>`      | Italic |
+| `<button>`      | Button class |
+
+Note: IDs can only belong to one object, it will be cleaner that way.
+
 
 
