@@ -38,10 +38,13 @@ Now, you could see you start by doing `<p>`, to indicate you want a paragraph.<b
 and `</p>`, notice the slash P, indicating to end the paragraph.
 
 ## Cheat Sheet
-|Class|
----------------
-|`<p>`|
-|`<b>`|
+| Class       | Description     |
+|------------|----------------|
+| `<p>`     | Paragraph       |
+| `<b>`        | Bold       |
+| `<br>`    | Newline |
+| `<h>`      | Header |
+
 ## Simple Syntax
 ## Creating shops
 hey
