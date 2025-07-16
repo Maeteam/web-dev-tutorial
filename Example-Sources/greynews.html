@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      font-size: 17px;
+      background-color: #000000;
+      color: #e0e0e0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    #scroll-container {
+      width: 100vw;
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    header {
+      background: #1a0000;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #330000;
+    }
+
+    header h1 {
+      color: #ff3c3c;
+      font-size: 30px;
+      margin: 0;
+    }
+
+    nav {
+      background: #140000;
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #2a0000;
+    }
+
+    nav button {
+      background: transparent;
+      border: none;
+      color: #999;
+      font-size: 17px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    nav button:hover {
+      color: #ff3c3c;
+    }
+
+    .page {
+      display: none;
+      padding: 20px;
+      height: 100vh;
+    }
+
+    .page.active {
+      display: block;
+    }
+
+    .article {
+      background: #1a0000;
+      border-left: 5px solid #ff3c3c;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+
+    .article h3 {
+      margin: 0;
+      color: #ff3c3c;
+      cursor: pointer;
+    }
+
+    .article h3:hover {
+      color: #c90707;
+      text-decoration: underline;
+    }
+
+    .article p {
+      margin-top: 10px;
+      display: none;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 15px;
+      color: #555;
+      border-top: 1px solid #330000;
+      padding: 15px;
+      background: #1a0000;
+    }
+    .time {
+            position: relative; /* Position it absolutely within the .article container */
+            right: 10px; /* 10px from the right edge */
+            top: 10px; /* 10px from the top edge */
+            font-size: 14px; /* Adjust font size */
+            color: #c90707;
+            padding: 5px;
+            border-radius: 5px; /* Rounded corners */
+    }
+  </style>
+</head>
+<body>
+  <div id="scroll-container">
+    <header>
+      <h1>Greynews Website Template</h1>
+      <p>Everything that's happening under the radar</p>
+      <b>Template by XsisTz</b>
+    </header>
+
+    <nav>
+      <button onclick="showPage('home')">News</button>
+      <button class="btn btn-primary" id="InformaticaShop">Tools & Files</button>
+      <button onclick="showPage('archive')">Learn</button>
+      <button onclick="showPage('contact')">Contact</button>
+    </nav>
+    
+    
+    <div class="page active" id="home">
+      <h2>Latest Headlines</h2>
+      <div class="article">
+        <h3 onclick="toggleParagraph('news1')">Article</h3>
+        <div class="time" id="time1">Date</div>
+        <p id="news1">some cool news page and a link: <span style="color: #1E90FF;">@xsistz</span> this is very cool indeed.</p>
+        </div>
+
+      <div class="article">
+        <h3 onclick="toggleParagraph('news2')">page linking</h3>
+        <div class="time" id="time1">Date</div>
+        <p id="news2">check out this cool link if you are new to the game, check out <button onclick="showPage('archive')" style="background: transparent; border: none;">
+  <span style="color: #1E90FF; text-decoration: underline; font-size: 18px;">#Learn</span>
+</button> -- This is actually clickable</p>
+      </div>
+      <div class="article">
+        <h3 onclick="toggleParagraph('news3')">Greynews opens!</h3>
+        <div class="time" id="time1">Date</div>
+        <p id="news3">This is the official greynews template!, now open source to everyone, hope you learn something new!</p>
+      </div>
+    </div>
+ 
+    <div class="page" id="archive">
+      <h2>Learn</h2>
+      <div class="article">
+        <h3 onclick="toggleParagraph('learn1')">Stay Safe & Secure</h3>
+        <p id="learn1">Staying safe in grey hack has never been harder, with all the zero-days an threats out there, but lets start with the basics
+		Well, The first thing you should know is - <b>Do Not!</b> run binaries from places you dont trust. <br>
+		Next, dont try to hack into places from your home IP, either rent a safe server or hack into npc and corrupt logs, but never risk your home for hacking(you could not hack anyone but aight).</p>
+      </div>
+	  <div class="article">
+        <h3 onclick="toggleParagraph('learn2')">Managing Filesystem</h3>
+        <p id="learn2">If you dont know, you filestructure and it's core is one of the key things to care about when wanting to keep yourself secure, and a good way to implement that would be either via coding, or via terminal,
+		the command for permission management is <b>chmod</b>, if you want to find more use <b>Manual.exe</b>, go to<br><b><i>Manual.exe > Terminal Programs > Permissions and users > [Command]</b></i><br> there all of the permission and file management built in utilities are placed with their usage, its very important
+		not to ignore this step since its one of the most critical parts of the game.</p>
+      </div>
+    </div>
+
+    <div class="page" id="contact">
+      <h2>Contact</h2>
+      <p><strong>Mail    : random@Greynews.net</strong></p>
+      <p><strong>Discord : @xsisTz</strong></p>
+      <p>For Bussiness Matters, please contact via E-mail(in-game), if its something important use Discord, and if its just a comment, you can contact when im online via ingame chat</p>
+      <br>
+      <h2>FAQ</h2>
+      <p><b>why did you spend so much time on this template?</b><br>
+      i hope to see more people get into the web dev side of grey hack, and its a really interesting subject that is underrated, and underused.<br>and i just want to see people make amazing websites and projects<br>
+      <p><b>am i free to use this template?</b><br>
+      100% Yes!, i even encourage you to, i would love to see people remake and use this template or even learn from it new things to implement to their own website<br>if you feel like it, say thanks or something but credit is not required at all!<br></p>
+    </div>
+
+    <footer class="footer">
+      &copy; Greynews | Everything that's under the radar.
+    </footer>
+  </div>
+
+<script>
+    function showPage(pageId) {
+      var pages = document.getElementsByClassName("page");
+      for (var i = 0; i < pages.length; i++) {
+        pages[i].className = "page";
+      }
+      var activePage = document.getElementById(pageId);
+      if (activePage) {
+        activePage.className = "page active";
+      }
+    }
+
+    function toggleParagraph(id) {
+      var p = document.getElementById(id);
+      if (p.style.display === "none" || p.style.display === "") {
+        p.style.display = "block";
+      } else {
+        p.style.display = "none";
+      }
+    }
+    
+    var scrollDiv = document.getElementById("scroll-container");
+    var scrollSpeedFactor = 0.1;
+
+    function handleScroll(event) {
+        var delta = event.deltaY;
+        var scrollAmount = delta * scrollSpeedFactor;
+        var newScrollTop = scrollDiv.scrollTop + scrollAmount;
+        var maxScrollTop = 300;
+        if (newScrollTop < 0) newScrollTop = 0;
+        if (maxScrollTop > 0 && newScrollTop > maxScrollTop) newScrollTop = maxScrollTop;
+        scrollDiv.scrollTop = newScrollTop;
+    }
+
+    scrollDiv.addEventListener("wheel", handleScroll);
+</script>
+</body>
+</html>
