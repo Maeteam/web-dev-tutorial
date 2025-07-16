@@ -17,6 +17,8 @@ a tutorial for web development in a single html file, including javascript and c
 - [Load images](#load-images)
 - [Javascript](#javascript)
 - [Mouse whell scrolling](#Mouse-wheel-scrolling)
+- [Pop ups](#pop-ups)
+- [Custom Pages](#custom-pages)
 ## HTML basics
 HTML works in a simple way,<br>
 you have built-in "classes", some example ones are:
@@ -260,7 +262,7 @@ scrollDiv.addEventListener("wheel", handleScroll);
 alright, looking promising, lets continue,<br>
 time for some math - if you dont understand, thats 100% alright, its complicated.<br>
 however, i will add comments.
-```javascript javascript
+```javascript
 <script>
 var scrollDiv = document.getElementById("scrollArea");
 var scrollSpeedFactor = 0.05;
@@ -286,4 +288,130 @@ html, body {
 ```
 that way the normal scroll bar wont appear and cause problems.
 <br>Thats about it for mouse wheel scrolling! enjoy this feature!<br>
+### Pop ups
+a cool feature, pop ups, can be seen in the gbi website, in the trusted section,<br>
+this feature also works with javascript, so lets get to coding this amazing feature!<br>
+
+```html
+<style>
+.popup-overlay {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.6);
+      display: none;
+      z-index: 1000;
+    }
+
+    .popup-box {
+      position: fixed;
+      width: 500px;
+      height: 200px;
+      left: 50%;
+      top: 50%;
+      margin-left: -250px; /* half width */
+      margin-top: -100px;  /* half height */
+      background-color: #1a2f4f;
+      border: 2px solid #2b4d77;
+      color: #e3e3e3;
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 0;
+      text-align: center;
+    }
+.link {
+    font-size: 14px;
+	  color: #00bde3;
+	  background: transparent;
+    border: none;
+}
+.link:hover{
+	  cursor: pointer;
+	  color: #0088da;
+}
+</style>
+
+<button class="link" onclick="openPopup('popupOverlay')">link name</button><br>
+
+
+<div id="popupOverlay" class="popup-overlay">
+      <div class="popup-box">
+          <h2>Header</h2>
+          <p>Cool paragraph and text goes into the pop up, pretty simple, dont forget the css</p>
+          <button class="btn" onclick="closePopup('popupOverlay')">Close</button>
+      </div>
+    </div>
+</div>
+
+
+<script>
+function openPopup(popupId) {
+  var overlay = document.getElementById(popupId);
+  if(overlay){
+    overlay.style.display = "block";
+  }
+}
+
+function closePopup(popupId) {
+  var overlay = document.getElementById(popupId);
+  if(overlay){
+    overlay.style.display = "none";
+  }
+}
+</script>
+```
+Youll notice, the close button is not an "X" because it gives a really messy hitbox and it doesnt matter that much,<br>
+that being said, lets explore the code!<br>
+first off, the css here is **crucial**, since it defines how to popup looks and the link itself look and makes it so the popup is centered.<br>
+then, the html, is just a button to link to a hidden divider, named "popupOverlay", if youd want another popup youd just need another button to link to another ID<br>
+and then create that ID e.g. "popupOverlay1" and so forth,<br>
+then, the javascript simply opens and closes the popup by it's ID.<br>
+
+### Custom Pages
+
+```html
+<style>
+.page {
+      display: none;
+      padding: 20px;
+      width: 100vw;
+      height: 100vh;
+    }
+.page.active {
+      display: block;
+    }
+</style>
+
+<button onclick="showPage('Page1')">Page One</button>
+<button onclick="showPage('Page2')">Page Two</button>
+<div class="page active" id="Page1">
+      <h2>Page One for the win</h2>
+      <p>some crappy paragraph no one cares page one is best shit in town</p>
+</div>
+<div class="page" id="Page2">
+      <h2>Im on team page two</h2>
+      <p>whoever thinks page 1 is better should be arrested for 1% brain usage!!</p>
+</div>
+<script>
+function showPage(pageId) {
+      var pages = document.getElementsByClassName("page");
+      for (var i = 0; i < pages.length; i++) {
+        pages[i].className = "page";
+      }
+      var activePage = document.getElementById(pageId);
+      if (activePage) {
+        activePage.className = "page active";
+      }
+    }
+</script>
+```
+again, pretty intuitive, but notice page1 is marked as class `active`,<br>
+actually, is `page active` notice the space, this means that it belongs to two classes, page and active<br>
+active is simply the main page, the one that loads in the beginning.<br>
+this is **very** similar to the popup, you get an object by ID and show it,<br>
+
+# Enjoy!
+
 
