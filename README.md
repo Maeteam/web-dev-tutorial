@@ -158,7 +158,7 @@ the differences are minor between the three, but i encourage you to play with th
 functions are one of the best things in grey hack's web development.<br>
 all because of: onclick()<br>
 this allows you to create basically everything, your own pages, retractable articles, <br>one of the classiest examples of all the principles learned here is the website:<br>
-### `WWW.GBI.COM` - in game website!
+### `WWW.GBI.ORG` - in game website!
 which i designed their webpage.<br>
 Now lets get to work on functions!<br>
 ```javascript
