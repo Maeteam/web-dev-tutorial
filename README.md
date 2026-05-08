@@ -79,7 +79,7 @@ h1 {
   color: #ffffff;
 }
 ```
-`NOTE: WHEN USING 'CSS' IN THE SAME FILE AS HTML, YOULL NEED TO SURROUND IT WITH A <style></stlye>`<br>
+`NOTE: WHEN USING 'CSS' IN THE SAME FILE AS HTML, YOULL NEED TO SURROUND IT WITH A <style></style>`<br>
 Now, you might ask, why does customclass have a dot behind it?<br>
 great question, customclass is an ACTUAL class, while h1 is more of a "Type"<br>
 so if you would want a header that is customclass you would do like so:
